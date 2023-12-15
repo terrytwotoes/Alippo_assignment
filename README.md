@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Alippo Assignment - React Application with TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the codebase for an Alippo assignment, a React application developed using TypeScript.
 
-Currently, two official plugins are available:
+## Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+- **Node.js**: Ensure Node.js is installed. Recommended version: [Node.js v20.10.0](https://nodejs.org/)
+- **npm or Yarn**: Choose either npm or Yarn for package management. [NPM v10.2.5]
 
-## Expanding the ESLint configuration
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Alippo-assignment.git
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Navigate to the project directory:
+   ```bash
+   cd Alippo-assignment
 
-- Configure the top-level `parserOptions` property like this:
+3. Install dependencies:
+   ```bash
+   npm install   
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Scripts
+Development
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+     npm run dev
+     
+Building
+
+     npm run build
+
+Linting
+
+     npm run lint
+
+### Project Structure
+The project structure is organized as follows:
+
+    src/: Contains the source code for the React components.
+    public/: Contains the HTML template and static assets.
+    package.json: Configuration file with dependencies and scripts.
+    README.md: Documentation file.
+
+### Technologies Used
+
+    React: v18.2.0
+    TypeScript: v5.2.2
+    Vite: v5.0.8
+    Tailwind CSS: v3.3.6
+    Other Dependencies: (Listed in package.json)
